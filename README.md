@@ -1,2 +1,3 @@
 # Captionify.me: Automatic Image Caption Generator
- <img href='./uploads/1.gif'>
+![Landing Page Demo](uploads/1.gif)
+
