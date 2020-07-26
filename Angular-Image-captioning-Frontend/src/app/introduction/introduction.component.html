@@ -1,0 +1,23 @@
+<section id="intro" class="parallax-section" [ngStyle]="{ 'backgroundImage': 'url('+myurl+')'}">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12">
+        <h3 class="wow bounceIn" data-wow-delay="0.9s">{{h3txt}}</h3>
+        <h1 class="wow fadeInUp" data-wow-delay="1.6s">{{h1txt}}</h1>
+        <ng-template [ngIf]="first==='true'&&second==='true'">
+          <a id="learnmorebtn" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs"
+             data-wow-delay="2.3s">LEARN MORE</a>
+          <a id="getstartedbtn" class="btn btn-lg btn-danger smoothScroll wow fadeInUp"
+             data-wow-delay="2.3s">LET'S GET STARTED!</a>
+        </ng-template>
+        <ng-template [ngIf]="first==='true'&&second==='false'">
+          <a id="uploadnow" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">UPLOAD IMAGE NOW</a>
+          <a id="ttsnow" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">TRY TTS NOW</a>
+        </ng-template>
+      </div>
+
+
+    </div>
+  </div>
+</section>

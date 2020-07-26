@@ -1,0 +1,67 @@
+input[type="number"]{
+  width: 5rem;
+}
+/*div.container{*/
+/*  width: auto;*/
+/*}*/
+/*.panel-body{*/
+/*  width: 100%;*/
+/*  height: 442.05px;*/
+/*}*/
+.panel:hover{
+  border: 1px solid darkred;
+  box-shadow: 12px 12px 20px 0 rgba(89, 207, 255, 0.4);
+}
+/*.wrapper {*/
+/*    display: inline-block;*/
+/*    padding: 10px;*/
+/*}*/
+/*.wrapper img {*/
+/*    width: 100%;*/
+/*    max-width: 300px;*/
+/*}*/
+/*.container-fluid{*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+/*  max-height: 400px;*/
+/*}*/
+/*.container-fluid:hover{*/
+/*  box-shadow: 8px 8px 16px 0 rgba(255, 0, 0, 0.2);*/
+/*}*/
+/*.container{*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  overflow: hidden;*/
+/*}*/
+.container{
+  width: max-content;
+}
+
+section#speech.parallax-section{
+padding: 140px 0;
+
+}
+
+#speech.parallax-section {
+  /*url('../../../assets/images/cover1.jpg')*/
+  /*  background: rgba(0, 0, 0, 0.8) 50% 0 repeat-y fixed;*/
+    background: url('../../../../assets/images/bg1.png') 50% 0 repeat-y fixed;
+  /*  background: url('https://1920x1080hdwallpapers.com/image/201602/abstract/4743/duct-red-dark-background-650x366.jpg') 50% 0 repeat-y fixed;*/
+  /*  background: url('https://1920x1080hdwallpapers.com/image/201602/abstract/4743/duct-red-dark-background-650x366.jpg') 50% 0 repeat-y fixed;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  background-color: lightgreen;
+    /*color: #ffffff;*/
+  padding-top: 14rem!important;
+  padding-bottom: 3rem!important;
+}
+
+#maincard{
+  background-color: #F4F2F3;
+}
+
+.form-control,textarea{
+  background-color: #f5f5f5;
+}

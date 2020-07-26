@@ -1,0 +1,6 @@
+__pycache__/*
+.idea/*
+venv/*
+.gitattribute
+Angular-Image-captioning-Frontend/.idea/*
+Angular-Image-captioning-Frontend/node_modules/*

@@ -1,0 +1,39 @@
+<section id="getstarted" class="parallax-section">
+  <div class="wow fadeInUp bounce smoothScroll" data-wow-delay="0.6s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="section-heading">
+            <h2>Get Captions for your images!!!</h2>
+          </div>
+          <div class="left-content">
+            <h4>Would you like to generate captions for your own images ?</h4>
+            <p>
+              Yes you are at the right place ! Welcome to captionify section. Click on the button below to get started
+              with captionify.me !
+            </p>
+            <a routerLink="/caption_generator" (click)="window.scrollTo(0, 0)" class="btn btn-lg btn-danger smoothScroll wow fadeInUp"
+               data-wow-delay="0.6s">GO NOW!</a>
+            <a (click)="on(2)" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs"  data-wow-delay="0.6s">Research Paper</a>
+            <a (click)="on(0)" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="0.6s">Survey Paper</a>
+            <a (click)="on(1)" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs"  data-wow-delay="0.6s">Poster</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6" id="imgcol">
+          <img class="right-image pull-right img-responsive"
+               src="./assets/images/get_started.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center overlay" (click)="off(0)">
+  <iframe src="https://drive.google.com/file/d/1-6ONXDkz0pxlXoeYSm7yE5h-ACpu2zNs/preview" width="595px" height="700px"></iframe>
+  </div>
+  <div class="center overlay" (click)="off(1)">
+    <iframe src="https://drive.google.com/file/d/1QKiQj71p0yWOMvgigkl2fzzURQ9b3iRk/preview" width="600px" height="700px"></iframe>
+  </div>
+  <div class="center overlay" (click)="off(2)">
+    <iframe src="https://drive.google.com/file/d/1o6qNLh65MRvgM5EI0aRVWju1eEuxy_6F/preview" width="600px" height="700px"></iframe>
+  </div>
+  
+</section>

@@ -1,0 +1,30 @@
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+  <div class="container-fluid">
+
+    <!-- navbar header -->
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target="#closeme" id='clickmetoclose'>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+      </button>
+      <a routerLink='home' fragment="#" class="navbar-brand" style="font-family: Pacifico;font-weight: normal">Captionify.me</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id='closeme'>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a (click)="go()" id="gotointro" class="smoothScroll">Intro</a></li>
+        <li><a (click)="go()" id="gotooverview" class="smoothScroll">Overview</a></li>
+        <li><a (click)="go()" id="gotogetstarted" class="smoothScroll">Captionify</a></li>
+        <li><a (click)="go()" id="gotoprogram" class="smoothScroll">Progress</a></li>
+        <li><a (click)="go()" id="gotospeakers" class="smoothScroll">Team</a></li>
+<!--        <li><a (click)="go()" id="gotovenue" class="smoothScroll">Venue</a></li>-->
+<!--        <li><a (click)="go()" id="gotosponsors" class="smoothScroll">Sponsors</a></li>-->
+        <li><a (click)="go()" id="gotocontact" class="smoothScroll">Contact</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>

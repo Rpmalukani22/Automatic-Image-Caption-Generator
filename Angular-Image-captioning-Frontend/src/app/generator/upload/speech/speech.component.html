@@ -1,0 +1,48 @@
+<section id="{{myid}}" [ngClass]="{'parallax-section':txtbox==='true'}">
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+<div class="panel panel-default" id="maincard">
+  <div class="panel-body">
+    <h3 class="panel-heading" *ngIf="txtbox==='true';else title">Text to Speech</h3>
+    <ng-template #title>
+    <h3 class="panel-heading">Settings</h3>
+      </ng-template>
+<form>
+  <div class="form-group row" *ngIf="txtbox==='true'">
+    <label for="text" class="col-sm-2 col-form-label">Message</label>
+    <div class="col-sm-10">
+      <textarea type="text" [value]="text" class="form-control-plaintext" id="text" rows="4" cols="50">{{text}}</textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="rate" class="col-sm-2 col-form-label">Rate</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="rate" value="1">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="pitch" class="col-sm-2 col-form-label">Pitch</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="pitch" value="1">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="voice" class="col-sm-2 col-form-label">Voice</label>
+    <div class="col-sm-10">
+      <select type="select" class="form-control" id="voice"></select>
+    </div>
+  </div>
+  <div class="form-group row" *ngIf="txtbox==='true'">
+    <label for="voice" class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10" >
+      <button type="button" id="speaker" class="btn btn-success">Speak!</button>
+    </div>
+  </div>
+</form>
+</div>
+  </div>
+      </div>
+    </div>
+   </div>
+</section>

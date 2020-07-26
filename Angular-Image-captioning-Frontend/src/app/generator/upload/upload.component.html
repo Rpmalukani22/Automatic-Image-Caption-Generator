@@ -1,0 +1,87 @@
+<!--<div>-->
+<!--    <label for="frontImage">Front Image: </label>-->
+<!--    <input (change)="onFileSelected($event)" type="file" id="frontImage" enctype="multipart/form-data">-->
+<!--  <button (click)="onUpload()">Upload</button>-->
+<!--  </div>-->
+<!--<div class="container-fluid" style="border: 1px solid red">-->
+<!--<h3>Python Flask File(s) Upload - Select file(s) to upload</h3>-->
+
+<!--<p id="msg"></p>-->
+<!--<div class="container">-->
+<!--  <div class="wrapper size">-->
+<!--    <img src="http://i.imgur.com/GNdhDFK.png"-->
+<!--         class="img-thumbnail" id="showimg"/>-->
+<!--    </div>-->
+
+<!--&lt;!&ndash;<img width="100%" id="showimg" class="img-rounded">&ndash;&gt;-->
+<!--<input type="file" id="multiFiles" name="files[]" multiple="multiple"/>-->
+<!--<button id="upload">Upload</button>-->
+<!--</div>-->
+<!--  </div>-->
+<section id="uploader" class="parallax-section">
+  <!--  <img src="http://i.imgur.com/GNdhDFK.png" id="showimg"/>-->
+  <!--  <button id="upload">Upload</button>-->
+  <!--  <p id="msg"></p>-->
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default  panel--styled">
+          <div class="panel-body">
+            <div class="col-md-12 panelTop">
+              <div class="col-md-4" id="rel">
+                <img id="showimg" class="img-responsive" src="./assets/images/overview-img.jpg" alt=""/>
+              </div>
+              <div class="col-md-8">
+                <h3 style="font-size: 3rem;text-transform: capitalize;font-family: 'Poppins', sans-serif">Select any
+                  image</h3>
+                <form>
+                  <div class="form-group">
+                    <input type="file" id="multiFiles" name="files[]" class="form-control" multiple="multiple"/>
+                  </div>
+                  <button id="upload" class="btn btn-success">Captionify!</button>
+                  <button (click)="on()" class="btn btn-danger">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>  Configure
+                  </button>
+
+                </form>
+                <p id="msg" style="font-size: 2rem;margin-top: 2rem;"></p>
+                <div id="loading" style="display: none">
+                  <img src="./assets/images/loading.gif" height="100px" width="100px" style="margin: 3rem">
+                </div>
+                <!--								<p>Lorem ipsum dolor sit amet, altera propriae iudicabit eos ne. Vel ut accusam tacimates, prima oratio ius ea. Et duo alii verterem principes, te quo putent melius fabulas, ei scripta eligendi appareat duo.</p>-->
+              </div>
+            </div>
+
+<!--            <div class="col-md-12 panelBottom">-->
+
+              <!--              <div class="col-md-4 text-center">-->
+              <!--                <button class="btn btn-lg btn-add-to-cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add-->
+              <!--                  to Cart-->
+              <!--                </button>-->
+              <!--              </div>-->
+              <!--              <div class="col-md-4 text-left">-->
+              <!--                <h5>Price <span class="itemPrice">$24.99</span></h5>-->
+              <!--              </div>-->
+              <!--              <div class="col-md-4">-->
+              <!--                <div class="stars">-->
+              <!--                  <div id="stars" class="starrr"></div>-->
+              <!--                </div>-->
+              <!--              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--  </div>-->
+
+  <div id="overlay" class="center">
+    <div class="container" class="speech">
+    <app-speech txtbox=false myid="configure"></app-speech>
+    <button class="btn btn-success" (click)="off()">Apply</button>
+    </div>
+  </div>
+</section>
+
